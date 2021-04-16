@@ -59,20 +59,20 @@ public class ChatBot {
 
         }
 
-        if(phrase.contains("twitter") || phrase.contains("tweet")) {
+        //if(phrase.contains("twitter") || phrase.contains("tweet")) {
 
-            Query query = new Query("from:elonmusk").since("2021-04-14");
-            Twitter twitter = new TwitterFactory().getInstance();
-            try {
-                QueryResult result = twitter.search(query);
-                System.out.println(result.getText());
-            }
-            catch(Exception e) {
-                System.exit(0);
-            }
+            //Query query = new Query("from:elonmusk").since("2021-04-14");
+            //Twitter twitter = new TwitterFactory().getInstance();
+            //try {
+                //QueryResult result = twitter.search(query);
+                //System.out.println(result.getText());
+            //}
+            //catch(Exception e) {
+                //System.exit(0);
+            //}
             
 
-        }
+        //}
 
         phrase = coreference(phrase);
         // Send phrase to the POS tagger; Returns an ArrayList of possible keywords
